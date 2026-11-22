@@ -9,9 +9,9 @@ Calculer l'indice **Niño3.4** à partir d'ERA5 et étudier son effet sur la **r
 ## Contenu
 | Fichier | Description |
 |---|---|
-| `partie1_indice_nino34.ipynb` | Calcul de l'indice Niño3.4 |
-| `partie2_vent_100m.ipynb` | Vent à 100 m, anomalies et lien avec les phases El Niño / La Niña |
-| `figures/` | Cartes et séries temporelles |
+| [`partie1_indice_nino34.ipynb`](partie1_indice_nino34.ipynb) | Calcul de l'indice Niño3.4 |
+| [`partie2_vent_100m.ipynb`](partie2_vent_100m.ipynb) | Vent à 100 m, anomalies et lien avec les phases El Niño / La Niña |
+| [`fiche_resultats_vent_100m.pdf`](fiche_resultats_vent_100m.pdf) | Fiche de résultats de la partie 2 (vent à 100 m) |
 
 ## Outils
 Python · xarray · pandas · NumPy · Matplotlib
