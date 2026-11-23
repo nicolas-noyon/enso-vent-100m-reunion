@@ -13,6 +13,19 @@ Calculer l'indice **Niño3.4** à partir d'ERA5 et étudier son effet sur la **r
 | [`partie2_vent_100m.ipynb`](partie2_vent_100m.ipynb) | Vent à 100 m, anomalies et lien avec les phases El Niño / La Niña |
 | [`fiche_resultats_vent_100m.pdf`](fiche_resultats_vent_100m.pdf) | Fiche de résultats de la partie 2 (vent à 100 m) |
 
+## Données
+Dans le dossier [`data/`](data/) :
+
+| Fichier | Contenu |
+|---|---|
+| `mon_gl_sstg_1979-2001.nc`, `mon_gl_sstg_2002-2024.nc` | Température de surface de la mer, moyennes mensuelles ERA5 (globe) |
+| `nino34.long.anom.csv` | Indice Niño3.4 de référence, anomalies mensuelles depuis 1870 ([NOAA PSL](https://psl.noaa.gov/data/timeseries/month/)) |
+
+Le vent à 100 m (1991–2020) et le masque terre-mer utilisés dans la partie 2 sont dans le dépôt [era5-maurice-ressource-production/data](https://github.com/nicolas-noyon/era5-maurice-ressource-production/tree/main/data). Il faut les copier dans `data/` avant de lancer la partie 2.
+
+**Source et licence ERA5 :** Generated using Copernicus Climate Change Service information [2026]. Ni la Commission européenne ni l'ECMWF ne sont responsables de l'usage qui est fait de ces données.
+Référence : Hersbach, H. et al. (2023). *ERA5 monthly averaged data on single levels from 1940 to present.* C3S Climate Data Store. DOI : [10.24381/cds.f17050d7](https://doi.org/10.24381/cds.f17050d7)
+
 ## Outils
 Python · xarray · pandas · NumPy · Matplotlib
 
@@ -21,7 +34,7 @@ Python · xarray · pandas · NumPy · Matplotlib
 pip install numpy pandas xarray netCDF4 matplotlib jupyter
 jupyter notebook
 ```
-Données ERA5 non incluses : [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/).
+Dans les notebooks, faire pointer la variable `DATA` vers le dossier [`data/`](data/).
 
 ## Auteur
 Nicolas NOYON – nicolasnoyon.pro@gmail.com
